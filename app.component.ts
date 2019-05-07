@@ -11,11 +11,14 @@ export class AppComponent {
   numero2:Number=30;
   resultado:Number;
   resultado2:Number;
-
+  resultado3:Number;
+  resultado4:Number;
 
   constructor(){
 this.sumar();
 this.restar();
+this.multiplicar();
+this.dividir();
 
   }
 
@@ -26,6 +29,14 @@ this.restar();
 
   public restar():void{
     this.resultado2=this.numero1.valueOf()-this.numero2.valueOf();
+   }
+
+   public multiplicar():void{
+     this.resultado3=this.numero1.valueOf()*this.numero2.valueOf();
+
+   }
+   public dividir():void{
+     this.resultado4=this.numero1.valueOf()/this.numero2.valueOf();
    }
 
 }
